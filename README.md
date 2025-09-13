@@ -1,7 +1,7 @@
 # 🎭 Playwright Automation Practice
 
 This repository contains my **self-practice automation project** while learning from the Udemy course:  
-📚 *Mastering Web & API Automation with Playwright* by **Pavan Kumar**.
+📚 *Learn playwright with Javascript* by **Pavan Kumar**.
 
 The project is focused on building a **strong foundation in Playwright** for **Web & API Automation Testing** using **JavaScript**.
 
