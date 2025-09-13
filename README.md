@@ -1,4 +1,5 @@
 # 🎭 Playwright Automation Practice
+#  Learn playwright with Javascript 
 
 This repository contains my **self-practice automation project** while learning from the Udemy course:  
 📚 *Learn playwright with Javascript* by **Pavan Kumar**.
