@@ -40,7 +40,7 @@ test('Handle Pages/Windows', async () => {
 
 //
 // 🔹 Example 2: Handling a new page automatically opened by clicking a link
-//
+// Navigate from one page to a another page
 test.only('Handle multiple Pages/Windows', async () => {
     // 1. Launch a new browser instance
     const browser = await chromium.launch();
@@ -57,12 +57,14 @@ test.only('Handle multiple Pages/Windows', async () => {
     await expect(page1).toHaveTitle('OrangeHRM');
 
     // 4. Prepare to capture a new page (before clicking the link)
+    //wait till another page opens
     const pagePromise = context.waitForEvent('page');
 
     // 5. Click the "OrangeHRM, Inc" link → This opens a new tab/window
     await page1.locator('//a[normalize-space()="OrangeHRM, Inc"]').click();
 
     // 6. Wait for the new page to be created and get a handle to it
+    //created page promise store in a new page
     const newPage = await pagePromise;
 
     // Print the title of the new page
